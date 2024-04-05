@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const addComentarioBtn = document.querySelector('.add-comment-btn');
     const comentariosContainer = document.querySelector('.comments-container');
     const postImage = document.querySelector('.post-image');
-
+    let numeroDeLikes = parseInt(localStorage.getItem('likeCount')) || 0;
     likesUsuario.forEach(like => {
         like.addEventListener("click", () => {
             let numeroDeLikes = parseInt(numeroDeLike.textContent);
@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 numeroDeLike.textContent = numeroDeLikes;
                 like.textContent = "Me gusta";
             }
+            numeroDeLike.textContent = numeroDeLikes;
+            localStorage.setItem('likeCount', numeroDeLikes);
         });
     });
 
@@ -35,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         numeroDeLike.textContent = numeroDeLikes;
+        localStorage.setItem('likeCount', numeroDeLikes);
     });
 
     addComentarioBtn.addEventListener('click', () => {
@@ -75,8 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     }
-
-    if (localStorage.getItem('likeCount')) {
-        numeroDeLike.textContent = localStorage.getItem('likeCount');
-    }
+    
+    numeroDeLike.textContent = numeroDeLikes;
 });
