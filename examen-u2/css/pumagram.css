@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.post-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.post-image {
+    max-width: 100%;
+    display: block;
+}
+
+.actions {
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.actions button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-btn {
+    background-color: #3897f0;
+    color: #fff;
+}
+
+.like-btn:hover {
+    background-color: #2680d3;
+}
+
+.comment-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.comment-btn:hover {
+    background-color: #f0f0f0;
+}
+
+
+.comments-container {
+    padding: 10px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.comment-username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.add-comment {
+    display: flex;
+}
+
+.comment-input {
+    width: calc(100% - 80px); /* Se ajusta al ancho del contenedor menos el ancho del botón */
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.add-comment-btn {
+    padding: 8px 16px;
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-comment-btn:hover {
+    background-color: #2680d3;
+}
+
+.like-count {
+    margin-left: 5px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}

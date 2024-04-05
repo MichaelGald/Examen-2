@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="./css/divisas.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Conversor de Divisas</h1>
+        <div class="input-container">
+            <label for="amount">Cantidad:</label>
+            <input type="number" id="amount" placeholder="Ingrese la cantidad">
+        </div>
+        <div class="input-container">
+            <label for="from">De:</label>
+            <select id="from">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="to">A:</label>
+            <select id="to">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+            </select>
+        </div>
+        <button id="convert-btn">Convertir</button>
+        <div id="result-container"></div>
+    </div>
+    <script src="./js/divisas.js"></script>
+</body>
+</html>
